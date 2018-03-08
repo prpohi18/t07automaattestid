@@ -1,5 +1,6 @@
 package springalgus;
 
+import java.util.stream.IntStream;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 import org.springframework.web.bind.annotation.RequestMapping; 
@@ -19,7 +20,18 @@ public class Rakendus {
     
     @RequestMapping("/korrutus")
     int korrutamine(int arv1, int arv2){
-       return arv1*arv2;
+       return arv1*arv2; 
+    }
+    @RequestMapping("/summa")
+    double summa(String arvud){ 
+        double sum = 0;
+        String[] temp = arvud.split(",");
+        for (int i = 0; i < temp.length; i++) {
+            sum += Double.parseDouble(temp[i].trim());
+        }
+        return sum;
+        
+        java.util.Arrays.stream(arvud.split(",")).map(s -> s.trim());
     }
     //http://localhost:8080/korrutus?arv1=3&arv2=5
  
