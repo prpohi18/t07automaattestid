@@ -19,4 +19,5 @@ public class FunktsioonideTest{
 	public void ymbermooduTest1(){
 		assertEquals(12, Funktsioonid.poolYmbermootu(6, 8, 10), 0.01);
 	}
+
 }
