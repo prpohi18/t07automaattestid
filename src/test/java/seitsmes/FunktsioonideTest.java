@@ -1,5 +1,5 @@
 package seitsmes;
-import org.junit.*
+import org.junit.*;
 
 public class FunktsioonideTest{
     @Test
