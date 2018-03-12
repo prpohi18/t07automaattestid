@@ -12,6 +12,7 @@ public class FunktsioonideTest{
     public void pindala1(){
        assertEquals(6.0, Funktsioonid.kolmnurgaPindala(3, 4, 5), 0.01);
        assertEquals(24.0, Funktsioonid.kolmnurgaPindala(6, 8, 10), 0.01);
+       assertEquals(0.43, Funktsioonid.kolmnurgaPindala(1, 1, 1), 0.01);
     }
     @Test
     public void ymbermooduTest1(){
