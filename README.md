@@ -1,6 +1,4 @@
-# t01funktsioonid
+# t07automaattestid
 
-Kodutööks on igaühel funktsiooni koostamine ning selle töö demonstreerimine näitprogrammi kaudu. 
-Kodutöö esitatakse siinse repositooriumi pull requestina ning tutvustatakse klassis tahvli ees
-
-Ideid ja näiteid leiab näidete esimese tunni materjalide alt
+Testide ja programmikoodi kordamööda loomine, nii et GitHubist paistab, millises järjekorras
+millised koodi osad tekkisid. 
