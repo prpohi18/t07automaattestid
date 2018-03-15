@@ -37,5 +37,22 @@ public class Kilpkonn {
             y--;
         }
     }
+
+    @Override
+    public String toString() {
+        if (suund==1){
+            return ">";
+        }
+        else if(suund==2){
+            return "V";
+        }
+        else if(suund==3){
+            return "<";   
+        }
+        else {
+            return "^";
+        }
+               
+    }
     
 }

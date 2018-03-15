@@ -1,5 +1,6 @@
 package ee.tlu.piibor12.automaattestid;
 
+import static org.hamcrest.CoreMatchers.is;
 import org.junit.Test;
 import static org.junit.Assert.*;
 import org.junit.Before;
@@ -55,5 +56,17 @@ public class Testid1 {
         k.edasi();
         kontrolliAsend(4,6,2);
 
+    }
+    @Test public void kuvamine(){
+        assertThat(k.toString(),is (">"));
+        k.keeraParemale();
+        assertThat(k.toString(),is ("V"));
+        k.keeraParemale();
+        assertThat(k.toString(),is ("<"));
+        k.keeraParemale();
+        assertThat(k.toString(),is ("^"));
+        k.keeraParemale();
+        assertEquals(">",k.toString());
+        k.keeraParemale();
     }
 }
