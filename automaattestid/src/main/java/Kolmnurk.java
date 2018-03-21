@@ -28,6 +28,7 @@ public class Kolmnurk {
         return 0;
     }
     
-    
-    
+    public int perimeter() {
+        return a + b + c;
+    }
 }
