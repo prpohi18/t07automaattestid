@@ -10,7 +10,12 @@ public class Test1 {
     Kolmnurk k;
     @Before
     public void setUp() {
-        k = new Kolmnurk(2, 5, 6);
+        k = new Kolmnurk(5, 7, 10);
+    }
+    
+    @Test public void kasSaab() {
+        assertEquals(5, k.a);
+        assertEquals(5, k.getSide(1));
     }
     
     
