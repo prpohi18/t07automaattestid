@@ -1,10 +1,12 @@
 package seitsmes;
 public class Ruumala{
-   public static double KeraRuumala(double r){
-    return 4/3*3.14159265359*Math.pow(r, 3);
+   public static int KeraRuumala(int r){
+    int V= (int) (4/3*3.14159265359*Math.pow(r, 3));
+    return V;
    }
-   public static double SilindriRuumala(double r, double h){
-       return 3.14159265359*Math.pow(r, 2)*h;
+   public static int SilindriRuumala(int r, int h){
+    int V = (int)(3.14159265359*Math.pow(r, 2)*h);
+    return V;
    }
 
 }
