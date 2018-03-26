@@ -9,9 +9,14 @@ public class Testid1{
   public void test(){
     assertEquals(3, 1+2);
   }
-  
+
   @Test
   public void test1(){
     assertEquals(12, Pyramid.areaCheck(2, 3, 4));
+  }
+
+  @Test
+  public void test2(){
+    assertEquals(8, Pyramid.volumeCheck(2, 3, 4, 2));
   }
 }
