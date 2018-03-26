@@ -1,5 +1,6 @@
 package seitsmes;
 public class Funktsioonid{
+	/*
 	public static int korruta(int arv1, int arv2){
 		return arv1*arv2;
 	}
@@ -13,6 +14,7 @@ public class Funktsioonid{
 	public static double poolYmbermootu(double kylg1, double kylg2, double kylg3){
 		return (kylg1+kylg2+kylg3)/2;
 	}
+	*/
 }
 
 
