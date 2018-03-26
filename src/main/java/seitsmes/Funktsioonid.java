@@ -1,12 +1,12 @@
 package seitsmes;
 public class Funktsioonid{
-   public static int korruta(int arv1, int arv2){
-      return arv1*arv2;
-   }
-   public static double kolmnurgaPindala(double kylg1, double kylg2, double kylg3){
-       return 6;
-   }
-   public static double poolYmbermootu(double kylg1, double kylg2, double kylg3){
-    return 12;
+
+   public static boolean kolmnurknurgad(int nurk1, int nurk2, int nurk3){
+    int vastus;
+    vastus = nurk1 + nurk2 + nurk3;
+    if(vastus == 180){
+        return true;
+    }
+    return false;
    }
 }
