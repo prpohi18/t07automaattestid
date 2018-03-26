@@ -7,4 +7,5 @@ public class FunktsioonTest {
     public void distanceTest(){
         assertEquals(4.0, Funktsioonid.distance(4.0, 3.0, 8.0, 3.0), 0.01);
     }
+
 }
