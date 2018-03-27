@@ -4,9 +4,11 @@ package com.mycompany.kodunetoo7;
 
 
 public class Ruumala {
-    public int a;
-    public int b;
-    public int h;
+
+    
+    public static int a;
+    public static int b;
+    public static int h;
     public Ruumala(int ka, int kb,int kh) {
         a=ka;
         b=kb;
@@ -18,7 +20,7 @@ public class Ruumala {
     }
     
 
-    public static Object tulemus(int a,int b, int h) {
+    public static double tulemus() {
         double V = Ruumala1(a,b,h);
                 return V;
     }
