@@ -8,4 +8,8 @@ public class Funktsioonid{
       c = pyth(3, 4);
 	  return a+b+c;
    }
+   
+   public static double pindala(int a, int b){
+	  return ((a*b)/2);
+   }
 }

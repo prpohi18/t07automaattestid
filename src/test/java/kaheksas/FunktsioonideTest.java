@@ -12,5 +12,10 @@ public class FunktsioonideTest{
     public void Test2(){
        assertEquals(12.0, Funktsioonid.ymbermoot(3, 4, 5), 0.01);
     }
+	
+	@Test
+    public void Test3(){
+       assertEquals(6.0, Funktsioonid.pindala(3, 4), 0.01);
+    }
    
 }
