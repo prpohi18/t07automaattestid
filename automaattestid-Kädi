@@ -1,0 +1,74 @@
+//Siia tuleb koduse töö PÕHI
+package seitsmes;
+
+public class Kodune{
+	//Suvaline liitmine
+	public static int liitmine(int arv1, int arv2){
+		return arv1+arv2;}
+	
+	//Kiiruse arvutamisel teepikkuse leidmine s=v*t
+	public static int teepikkus(int kiirus1, int aeg1){
+		return kiirus1*aeg1;
+	}
+	
+	//Kiiruse arvutamisel kiiruse leidmine v=s/t
+	public static double kiirus(double teepikkus2, double aeg2){
+		return teepikkus2/aeg2;
+	}
+	
+	//Kiiruse arvutamisel aja leidmine t=s/v
+	public static double aeg(double teepikkus3, double kiirus3){
+		return teepikkus3/kiirus3;
+	}
+	
+	//Risttahuka pindala valem= 2*(pikkus*laius+laius*kõrgus+pikkus*kõrgus)
+	public static double risttahukas1(double pikkus, double laius, double korgus){
+		return 2*(pikkus*laius+laius*korgus+pikkus*korgus);
+	}
+	
+	//Silindri pindala valem Täispindala=2*pii*r2+2*pii*r*h=2*pii*r(r+h)
+	public static double silinder(double raadius, double skorgus){
+		double pohjapindala = 3.14*(raadius*raadius);
+		double kyljepindala = 2*3.14*raadius*skorgus;
+		double taispindala = 2*pohjapindala+kyljepindala;
+		return taispindala;
+	}
+
+}
+
+//Siia tuleb koduse töö TEST osa
+
+package seitsmes;
+import org.junit.*;
+import static org.junit.Assert.*;
+
+public class KoduneTest{
+    @Test
+    public void liitmiseTest(){
+       assertEquals(5, Kodune.liitmine(3, 2));
+    }
+	@Test
+	public void teepikkuseTest(){
+		assertEquals(6, Kodune.teepikkus(3, 2));
+	}
+	@Test
+	public void kiiruseTest(){
+		assertEquals(1.5, Kodune.kiirus(3,2),0.01);
+		assertEquals(6.0, Kodune.kiirus(12,2),0.01);
+	}
+	@Test
+	public void ajaTest(){
+		assertEquals(1.5, Kodune.aeg(3,2),0.01);
+		assertEquals(6.0, Kodune.aeg(12,2),0.01);
+	}
+	@Test
+	public void pindala1Test(){
+		assertEquals(122.0, Kodune.risttahukas1(7,4,3),0.01);
+		assertEquals(124.8, Kodune.risttahukas1(7.2,4,3),0.01);
+	}
+	@Test
+	public void silindriTest(){
+		assertEquals(150.72, Kodune.silinder(3,5),0.01);
+		assertEquals(314.0, Kodune.silinder(5,5),0.01);
+	}
+}
