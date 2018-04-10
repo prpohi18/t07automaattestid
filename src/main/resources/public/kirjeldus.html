@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Rakenduse kirjeldus</title>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script>
+            let xhr=new XMLHttpRequest();
+            xhr.onreadystatechange=kuvaVastus;
+            function sisestaArvud(){
+                let a1=document.getElementById("kast1").value;
+                let a2=document.getElementById("kast2").value;
+                let aadress="/korrutus?arv1="+a1+"&arv2="+a2;
+                xhr.open("GET", aadress, true);
+                xhr.send();
+            }
+            function kuvaVastus(){
+                if(xhr.readyState==4){
+                   document.getElementById("vastus").innerHTML=xhr.responseText;
+                }
+             
+            }
+            function summa(){
+                let s1=document.getElementById("arvud1").value;
+                let s2=document.getElementById("arvud2").value;
+                let s3=document.getElementById("arvud3").value;
+                let aadress="/summa?arvud=arvud1+arvud2+arvud3;";
+                xhr.open("GET", aadress, true);
+                xhr.send();
+            ]
+            function kuvaVastus2(){
+                if(xhr.readyState==4){
+                    document.getElementById("vastus2").innerHTML=xhr.responseText;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <div>Kursuse raames loodud proovilehestik</div>
+        <input type="number" id="kast1" /> x
+        <input type="number" id="kast2" /> 
+        <input type="button" value="=" onclick="sisestaArvud()" />
+        <span id="vastus">Vastuse koht</span>
+        <br />
+        <input type="number" id="arvud1" /> +
+        <input type="number" id="arvud2" /> +
+        <input type="number" id="arvud3" />
+        <input type="button" value="=" onclick="summa()" />
+        <span id="vastus2">vastus</span>
+        
+        
+    </body>
+</html>
