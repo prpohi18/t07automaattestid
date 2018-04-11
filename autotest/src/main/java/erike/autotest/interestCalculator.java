@@ -10,12 +10,21 @@ package erike.autotest;
  * @author erike
  */
 public class interestCalculator {
+    public static double interest(double base, double percentage, double duration){
+        double interestOutput = base * percentage * duration;
+        return interestOutput;
+    }
     public static double interestSum(double base, double percentage, double duration){
         double interestOutput = base + (base * percentage * duration);
         return interestOutput;
     }
     public static void main(String[] args){
-        double a = interestSum(1200, 0.05, 12);
-        System.out.println(a);
+        double base = 1200;
+        double percentage = 0.05;
+        double duration = 12;
+        double a = interest(base, percentage, duration);
+        double b = interestSum(base, percentage, duration);
+        System.out.println("Intress: "  + a);
+        System.out.println("Summa: " + b);
     }
 }
