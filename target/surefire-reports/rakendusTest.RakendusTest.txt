@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: rakendusTest.RakendusTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 0.017 sec <<< FAILURE! - in rakendusTest.RakendusTest
+testKorrutamine(rakendusTest.RakendusTest)  Time elapsed: 0.016 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<2.5> but was:<12.0>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:553)
+	at org.junit.Assert.assertEquals(Assert.java:683)
+	at rakendusTest.RakendusTest.testKorrutamine(RakendusTest.java:12)
+
